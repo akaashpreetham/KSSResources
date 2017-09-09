@@ -1,0 +1,97 @@
+html{
+	height: 100%;
+	background: linear-gradient(270deg, #2a8e8b, #50c7ee, #ab7ec5);	
+	background-repeat:no-repeat;
+	background-size: 600% 600%;
+	animation: bg 15s ease infinite;
+}
+@keyframes bg { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+h1{
+	font-weight: 300;
+	font-family: 'Open Sans', Arial, Helvetica Neue, sans-serif;
+	text-align: center;
+	color: #DFDFDF;
+	font-weight: 100;
+	border-bottom: 1px solid #DFDFDF;
+	text-shadow:0 0 20px #fff05b;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: type 5s ease, 10s cloud linear infinite;
+}
+@keyframes type{
+	0%{width:0%;}
+	100%{width: 100%;}
+}
+@keyframes cloud{
+	0%{
+		color: #DFDFDF;
+		text-shadow:0 0 20px goldenrod;	
+		border-bottom: 1px solid #DFDFDF;
+	}
+	25%{
+		color: goldenrod;
+		border-bottom: 1px solid goldenrod;
+	}
+	50%{
+		color: black;
+		text-shadow: 0 0 20px #fff05b;
+		border-bottom: 1px solid black;
+	}
+	75%{
+		color: goldenrod;
+		border-bottom: 1px solid goldenrod;
+	}
+	100%{
+		color: #DFDFDF;
+		text-shadow: 0 0 20px goldenrod;
+		border-bottom: 1px solid #DFDFDF;
+	}
+}
+.domain{
+	margin:20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 250px;
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+	left: 50%;
+	color: white;	
+	white-space: nowrap;
+	border: 2px solid rgba(250,250,250,0.5);
+	background-color: rgba(100,100,100,0.3);
+	font-family: 'Open Sans',Arial, Helvetica Neue, sans-serif;
+	text-align: center;
+	transform: translateX(-50%);
+	animation: expand 5s ease;
+}
+.domain h2{
+	transform: translateY(50%);
+}
+@keyframes expand{
+	0%{
+		width: 0px;
+		height: 0px;
+	}
+	50%{
+		width: 500px;
+		height: 110px;
+	}
+	100%{
+		width: 250px;
+		height: 100px;
+	}
+}
+.domain:hover{
+	width: 300px;
+	height: 120px;
+}
+.domain h2 a{
+	text-decoration: none;
+	color: white;
+	font-weight: normal;
+}

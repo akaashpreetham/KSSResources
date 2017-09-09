@@ -1,0 +1,159 @@
+html{
+	background-color: indigo;
+}
+.glitch{
+	font-size: 100px;
+	line-height: 1;
+	font-family: 'Poppins',sans-serif;
+	font-weight: 500;
+	position: absolute;
+	left: 50%;
+	margin: 0;
+	white-space: nowrap;
+	transform: translateX(-50%);
+	color: #fff;
+}
+.glitch:before, .glitch:after{
+	top:0;
+	display:block;
+	content: 'WEB DEVELOPMENT';
+	position: absolute;
+	top:0;
+	left: 0;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	opacity: 0.8;
+} 
+.glitch:after{
+	color: violet;
+	left: 0px;
+	text-shadow: 2px 0 #00ffea;
+	z-index: -2;
+} 
+.glitch:before{
+	left: 0px;
+	text-shadow: 2px 0 #00ffea;
+	color: lightblue;
+	z-index: -1;
+}
+.glitch:before{
+		animation: glitch 0.5s cubic-bezier(.25,.46,.45,.94) both 3,2s shift 3s linear 2;
+	}
+.glitch:after{
+		animation: glitch 0.5s cubic-bezier(.25,.46,.45,.94) reverse both 3,2s shift 3s linear 2;
+}
+.glitch{
+	animation: shift 2s ease 1;
+}
+@keyframes shift{
+	0%{
+		clip:rect(55px,9999px,56px,0);
+	}
+	5%{
+		clip:rect(47px,9999px,30px,0);
+	}
+	10%{
+		clip:rect(33px,9999px,36px,0);
+	}
+	15%{
+		clip:rect(35px,9999px,9px,0);
+	}
+	20%{
+		clip:rect(63px,9999px,59px,0);
+	}
+	25%{
+		clip:rect(96px,9999px,98px,0);
+	}
+	30%{
+		clip:rect(48px,9999px,77px,0);
+	}
+	35%{
+		clip:rect(50px,9999px,34px,0);
+	}
+	40%{
+		clip:rect(60px,9999px,72px,0);
+	}
+	45%{
+		clip:rect(10px,9999px,81px,0);
+	}
+	50%{
+		clip:rect(2px,9999px,60px,0);
+	}
+	55%{
+		clip:rect(23px,9999px,89px,0);
+	}
+	60%{
+		clip:rect(76px,9999px,91px,0);
+	}
+	65%{
+		clip:rect(62px,9999px,30px,0);
+	}
+	70%{
+		clip:rect(60px,9999px,73px,0);
+	}
+	75%{
+		clip:rect(60px,9999px,87px,0);
+	}
+	80%{
+		clip:rect(2px,9999px,14px,0);
+	}
+	85%{
+		clip:rect(28px,9999px,87px,0);
+	}
+	90%{
+		clip:rect(73px,9999px,50px,0);
+	}
+	95%{
+		clip:rect(79px,9999px,70px,0);
+	}
+	100%{
+		clip:rect(17px,9999px,79px,0);
+	}
+}
+@keyframes glitch {
+    0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translate(-5px, 5px)
+    }
+    40% {
+        transform: translate(-5px, -5px)
+    }
+    60% {
+        transform: translate(5px, 5px)
+    }
+    80% {
+        transform: translate(5px, -5px)
+    }
+    to {
+        transform: translate(0)
+    }
+}
+.box{
+	width: 400px;
+	height: 400px;
+	border: 15px solid rgb(200,220,240);
+	position: absolute;
+	top:20%;
+	border-right: 2px solid rgb(200,220,240);
+	border-left: 2px solid rgb(200,220,240);
+	border-radius: 10%;
+	animation: 2s shift 1;
+}
+#frontend{
+	left: 200px;
+}
+#backend{
+	right:200px;
+}
+.box h2{
+	color: rgb(200,220,240);
+	text-align: center;
+	border-bottom: 1px solid rgb(200,220,240);
+	border-radius: 20px;
+	text-shadow: 1px 1px 1px solid black;
+	font-family: 'Open Sans',Arial,Helvetica Neue,sans-serif;
+	font-weight: 300;
+}
